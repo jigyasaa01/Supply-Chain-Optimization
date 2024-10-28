@@ -1,0 +1,315 @@
+body{
+    background-color: #041723;
+    overflow: auto;
+    overflow-x:hidden;
+}
+
+label{
+    display:inline-block;
+}
+
+.upload-home-section{
+    padding-top: 90px;
+}
+
+.upload-home-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    text-align: center;
+}
+
+.upload-home-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.upload-left-block{
+    width: 40vw;
+    padding-right: 20px;
+}
+
+.upload-home-heading{
+    font-family: 'Varela', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: left;
+    max-width: 40vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.upload-home-para{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 300px;
+    opacity: 75%;
+    color:#ffffff;
+    text-align: left;
+
+}
+
+.upload-right-block{
+    width: 30vw;
+    padding-left: 20px;
+}
+
+
+.upload-file-label{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 75%;
+}
+
+.upload-file-input{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: hsla(0, 0%, 100%, 0.248);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    align-self: center;
+    color: #ffffff;
+    cursor: pointer;
+    width: 218px;
+    max-width: 300px;
+}
+
+.upload-file-input::file-selector-button{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #12D9A3;
+    cursor: pointer;
+    width: 100px;
+}
+
+.upload-form-submit{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    background-color: #e37439;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+}
+
+.upload-footer-section{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.upload-footer-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+
+.upload-h5{
+    font-family: 'Varela', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 75%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.upload-h6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Varela', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 75%;
+    color: #ffffff;
+}
+
+.upload-footer-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upload-footer-div{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;   
+}
+
+.upload-footer-div p{
+    margin-left: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 60%;
+}
+
+.loading-section{
+    padding-top: 150px;
+}
+
+.loading-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    text-align: center;
+}
+
+.loading-h1{
+    font-family: 'Varela', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.loading-para{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    opacity: 75%;
+    color:#ffffff;
+    text-align: center;
+}
+
+.plot-h1{
+    font-family: 'Varela', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plot-img-div{
+    color: #ffffff;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: auto;
+    text-align: center;
+}
+
+.plot-img{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+}
+
+.plot-para{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    opacity: 75%;
+    color:#ffffff;
+    text-align: center;
+}
+
+.plot-btn{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    background-color: #e37439;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    width: auto;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plot-btn.home{
+    border: solid 2px #12D9A3;
+    background-color: transparent;
+    color: #12D9A3;
+    margin-bottom: 100px;
+}
+
+.plot-form{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+
+}
+
+.plot-form-csv{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+}
+
+.plot-csv-div{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 90px;
+    border: #e37439 solid 2px;
+    border-radius: 10px;
+}
+
+.plot-csv-div .plot-h1{
+    margin-bottom: 60px;
+}

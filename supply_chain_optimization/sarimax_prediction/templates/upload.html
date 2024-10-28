@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script>
+        window.onload = function() {
+            // Clear all input fields
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="upload-home-section">
+        <div class="upload-home-container">
+            <div class="upload-home-flexbox">
+                <div class="upload-left-block">
+                    <h1 class="upload-home-heading">Welcome to Supply Chain Optimizer</h1>
+                    <p class="upload-home-para">Please upload your CSV file containing the sales data of the products, based on the last date of each month.</p>
+                </div>
+                <div class="upload-right-block">
+                    <div class="upload-form-block">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <label class="upload-file-label" for="">File (<b><i><u>must be a csv</u></i></b>):</label><br>
+                            <input class="upload-file-input" type="file" name="file" ><br>
+                            <button class="upload-form-submit" type="submit">Submit</button><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="upload-footer-section">
+        <div class="upload-footer-container">
+            <h5 class="upload-h5">Project made with the help of - Django and SARIMAX model</h5>
+            <h6 class="upload-h6">Made by :</h6>
+            <div class="upload-footer-flexbox">
+                <div class="upload-footer-div">
+                    <h6 class="upload-h6">Anika Jain</h6>
+                    <p>0103AL211019</p>
+                    <p>Roll No. - 019</p>
+                    <p>CSE-AIML-VI-A</p>
+                </div>
+                <div class="upload-footer-div">
+                    <h6 class="upload-h6">Harshit Gupta</h6>
+                    <p>0103AL211077</p>
+                    <p>Roll No. - 076</p>
+                    <p>CSE-AIML-VI-A</p>
+                </div>
+                <div class="upload-footer-div">
+                    <h6 class="upload-h6">Jigyasa Chourasia</h6>
+                    <p>0103AL211083</p>
+                    <p>Roll No. - 082</p>
+                    <p>CSE-AIML-VI-A</p>
+                </div>
+                <div class="upload-footer-div">
+                    <h6 class="upload-h6">Khushi Kapoor</h6>
+                    <p>0103AL211089</p>
+                    <p>Roll No. - 088</p>
+                    <p>CSE-AIML-VI-A</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

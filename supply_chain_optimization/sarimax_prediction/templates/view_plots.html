@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Plots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1 class='plot-h1'>Plots</h1>
+
+    <div class="plot-img-div">
+    {% for plot in plots %}
+        <img class='plot-img' src="{{ media_url }}plots/{{ plot }}" alt="{{ plot }}"><br>
+        <p class="plot-para">{{ plot }}</p><br>
+        <form class="plot-form" action="{% url 'download_plots' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="filename" value="{{ plot }}">
+            <input class='plot-btn' type="submit" value="Download {{plot}}">
+        </form>
+    {% endfor %}
+    
+    <div class="plot-csv-div">
+        <h1 class='plot-h1'>CSV Files</h1>
+        {% for csv in csvs %}
+            <form class="plot-form-csv" action="{% url 'download_csv' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="filename" value="{{ csv }}">
+                <input class='plot-btn' type="submit" value="Download {{csv}}">
+            </form>
+        {% endfor %}
+    </div>
+
+    </div>
+    <form class="plot-form" action="{% url 'delete_plots' %}" method="post">
+        {% csrf_token %}
+        <input class='plot-btn home' type="submit" value="Upload Another File">
+    </form>
+
+</body>
+</html>
